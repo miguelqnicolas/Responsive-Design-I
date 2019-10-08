@@ -1,3 +1,284 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* 
+http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+body {
+	width: 80%;
+	margin: auto;
+}
+
+/* desktop view */
 
 
+/* index */
+
+
+/* header */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0px 10px 0px;
+}
+
+.header nav a {
+	text-decoration: none;
+	color: black;
+	margin: 0px 60px 0px 60px;
+    font-size: 18px;
+}
+
+.header nav a:first-child {
+    margin-left: 0px;
+}
+
+.header nav a:last-child {
+    margin-right: 0px;
+}
+
+.header nav a:hover{
+	border-bottom: 2px solid black;
+	border-bottom-right-radius: 2px;
+	border-bottom-left-radius: 2px;
+}
+
+.logo img {
+	width: 225px;
+}
+
+/* first section */
+
+.firstSection {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 75px 0px 75px 0px;
+	width: 80%;
+	margin: auto;
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.title h1 {
+	font-size: 80px;
+}
+
+/* button */
+
+.title a {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: deepskyblue;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.title a:hover {
+	background-color: lightskyblue;
+}
+
+.firstSection img {
+	height: 500px;
+}
+
+/* second section */
+
+.secondSection {
+	padding: 75px 0px 75px 0px;
+	border-top: 2px solid black;
+	display: flex;
+}
+
+.secondSection div {
+	font-size: 30px;
+}
+
+/* middle image */
+
+.middle-img {
+	width: 100%;
+}
+
+/* third section */
+
+.thirdSection {
+	display: flex;
+	padding: 75px 0px 75px 0px;
+	border-bottom: 2px solid black;
+}
+
+.thirdSection div {
+	font-size: 30px;
+}
+
+/* footer */
+
+footer {
+	padding: 75px 0px 75px 0px;
+	font-size: 30px;
+}
+
+footer p {
+	text-align: center;
+	padding: 75px 0px 75px 0px;
+}
+
+/* tablet view */
+
+@media (max-width: 800px) {
+    
+    .header {
+        flex-direction: column-reverse;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .header nav {
+        margin-top: 15px;
+    }
+
+    .header nav a {
+        font-size: 16px;
+        margin: 0px 30px;
+    }
+
+    .firstSection img {
+         display: none;
+    }
+
+    .secondSection div {
+        font-size: 16px;
+    }
+
+    .thirdSection div {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+/* mobile view */
+
+@media (max-width: 500px) {
+    
+    .header nav {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header nav a {
+        margin: 0px;
+        padding: 20px 0px;
+        border-top: 1px solid black;
+    }
+
+    .header nav a:last-child {
+        border-bottom: 1px solid black;
+    }
+
+    .secondSection {
+        flex-direction: column;
+    }
+
+    .secondSection div {
+        margin-bottom: 20px;
+    }
+
+    .secondSection div:last-child {
+        margin-bottom: 0px;
+    }
+
+    .thirdSection {
+        flex-direction: column;
+    }
+
+    .thirdSection div {
+        margin-bottom: 20px;
+    }
+
+    .thirdSection div:last-child {
+        margin-bottom: 0px;
+    }
+}
